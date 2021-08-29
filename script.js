@@ -60,8 +60,6 @@ yearList()
 
 
 
-
-
 //Validador de CPF
 
 console.log ('JavaScript carregado') // apenas para mostrar que o arquivo javascript está carregado
