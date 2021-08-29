@@ -54,11 +54,11 @@
                     </select>
                 </label><br>
                 <label>Identidade *: <br><input type="text" name="identidade" id="identidade" size="20"></label><br>
-                <label>CPF *: <br><input type="text" id="cpf_digitado" erro="" onkeypress="$(this).mask('00000000000')"></label><br>
+                <label>CPF *: <br><input  type="text" id="cpf_digitado" erro="" onkeypress="$(this).mask('00000000000')" placeholder="Somente números"></label><br>
             </fieldset>
 
             <fieldset>
-                <label>Cep *: <br><input type="text" name="cep" id="cep" size="15"></label><br>
+                <label>Cep *: <br><input type="text" name="cep" id="cep" size="15" placeholder="Ex. 00.000-000"></label><br>
                 <label>Rua: <br><input type="text" name="rua" id="rua" size="35"></label><br>
                 <label>Nº: <br><input type="text" name="numero" id="numero" size="5"></label><br>
                 <label>Complemento: <br><input type="text" placeholder= "ex. Bloco 2, AP 301 "name="complemento" id="complemento" size="30"></label><br>         
@@ -140,6 +140,8 @@
     <footer>
         <button type='button'>Enviar</button>
     </footer>
+
+
 
 </body>
 </html>

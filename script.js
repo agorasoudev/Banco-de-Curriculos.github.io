@@ -56,21 +56,34 @@ function yearList() {
     }
 }
 yearList()
-    
+
+
+
+
+
 
 //Validador de CPF
 
 console.log ('JavaScript carregado') // apenas para mostrar que o arquivo javascript está carregado
+
 
 const limparCpf = (cpf_digitado) => {
     document.getElementById('cpf_digitado').value = '';
 
 }
 
-
-
 function validaCPF(cpf){
-    if(cpf.length != 11){ // verificando e validando se o cpf foi digitado com 11 numeros
+    if(cpf.length != 11 || 
+    cpf == "00000000000" ||         
+    cpf == "11111111111" ||         
+    cpf == "22222222222" ||         
+    cpf == "33333333333" ||         
+    cpf == "44444444444" ||         
+    cpf == "55555555555" ||         
+    cpf == "66666666666" ||         
+    cpf == "77777777777" ||         
+    cpf == "88888888888" ||         
+    cpf == "99999999999") { // verificando e validando se o cpf foi digitado com 11 numeros ou seuqnecia de numeros conhecidos
         return false
     }
     else{
@@ -119,7 +132,7 @@ function  validacao() {
     let resultadoValidacao = validaCPF(cpf);
 
     if(resultadoValidacao) { 
-        document.getElementById('cpf_digitado').value = alert('CPF Válido') = document.getElementById('cpf_digitado').value;
+        document.getElementById('cpf_digitado').value
     }
     else{
         document.getElementById('cpf_digitado').value = alert('CPF Inválido, por favor digite novamente');
