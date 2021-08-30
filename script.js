@@ -24,7 +24,7 @@ const pesquisarCep = async() => {
     limparFormulario();
 
     const cep = document.getElementById('cep').value;
-    const url = `http://viacep.com.br/ws/${cep}/json/`;
+    const url = `https://viacep.com.br/ws/${cep}/json/`;
     if(cepValido(cep)){
         const dados = await fetch(url);
         const endereco = await dados.json();
@@ -58,8 +58,6 @@ function yearList() {
 yearList()
 
 
-
-
 //Validador de CPF
 
 console.log ('JavaScript carregado') // apenas para mostrar que o arquivo javascript está carregado
@@ -81,7 +79,7 @@ function validaCPF(cpf){
     cpf == "66666666666" ||         
     cpf == "77777777777" ||         
     cpf == "88888888888" ||         
-    cpf == "99999999999") { // verificando e validando se o cpf foi digitado com 11 numeros ou seuqnecia de numeros conhecidos
+    cpf == "99999999999") { // verificando e validando se o cpf foi digitado com 11 numeros ou sequência de numeros conhecidos
         return false
     }
     else{
